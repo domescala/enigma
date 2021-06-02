@@ -88,6 +88,11 @@ a{
 
 }
 #version{
+    position:absolute;
+    bottom:10px;
+    left:25px;
+}
+#version p{
     font-size: 8px;
     color: #444444
 }
