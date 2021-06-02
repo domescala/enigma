@@ -3,6 +3,7 @@ var charBypass = " ";
 var button_share_show = false
 
 var al = "abcdefghijklmnopqrstuvwxyzòàèéù "
+
 for (let i = 0; i < al.length; i++) {
     alfabeto[i] = al.charAt(i)
 }
@@ -15,7 +16,7 @@ function vigenere(frase, chiave, direzione) {
     var frase_criptata = "";
     for (let i = 0; i < frase.length; i++) {
         lettera_frase = frase.charAt(i);
-        lettera_chiave = chiave.charAt(j);
+        lettera_chiave = chiave.charAt(j).toLowerCase();
 
         var lettera_criptata = lettera_frase; // inizializzare
 
@@ -165,5 +166,8 @@ if (document.URL.split("?")[1]) {
     decrypt2()
 }
 
-decrypt2()
-record()
+decrypt2();
+record();
+
+
+document.getElementById("version_p").innerHTML = "0.4";
