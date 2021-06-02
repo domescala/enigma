@@ -8,20 +8,29 @@
     <link rel="stylesheet" href="style/style.css"> <title>Document</title>
 </head>
 <body>
-    <div id="crypt">
-            <input id="input" type="text" value="frase">
-    <input id="key" type="text" value="1">
-    <p id="output"></p>
-    <a id="link_output" href="">  </a>
-    </div>
-    <div id="decrypt">
-
-    </div><div class="divtext">
-    <h1 id="text"></h1>
-
-    </div>
+    
     
 
-    <script src="script/crypt.js"></script>
+    </div>
+    <textarea id="vigenere_chiave" type="text" value="chiave" placeholder="Chiave"></textarea>
+
+    <textarea id="vigenere_in" type="text" value="frase" placeholder="Inserisci prima la chiave, poi il messaggio da criptare"></textarea>
+        
+        <br>
+    <!-- <textarea id="vigenere_out" type="text" value=""></textarea> -->
+        <br>
+        <br>
+        <br>
+        <div id="div_share">
+                <a id="link" href="" hidden >
+                    <button>
+                            condividi messaggio
+                    </button>
+                </a>
+
+        </div>
+        
+     <script src="script/autosize.js"></script>
+    <script src="script/vigenere.js"></script>
 </body>
 </html>
