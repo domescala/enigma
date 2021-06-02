@@ -54,7 +54,7 @@ button {
     padding: 0;
     width: auto;
     overflow: visible;
-
+    outline: none;
     background: transparent;
 
     /* inherit font & color from ancestor */
@@ -82,9 +82,12 @@ textarea {
 
     resize: none; /*remove the resize handle on the bottom right*/
 }
-textarea:focus{
-    border: 0 none #FFF;
+
+textarea:active, textarea:focus, textarea:focus-visible, button:active, button:focus-visible, button:focus{
+    border: 0 ;
     overflow: hidden;
     outline:none;
 }
+
+
 

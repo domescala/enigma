@@ -97,3 +97,6 @@ a{
     font-size: 8px;
     color: #444444
 }
+#version p:after{
+    content: "- d";
+}
