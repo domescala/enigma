@@ -170,4 +170,4 @@ decrypt2();
 record();
 
 
-document.getElementById("version_p").innerHTML = "0.4";
+document.getElementById("version_p").innerHTML = "0.5";
