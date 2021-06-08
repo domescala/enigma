@@ -37,6 +37,8 @@ textarea{
     border-radius: 25px;
     text-align: center;
 
+    font-variant-caps: small-caps;
+
 }
 textarea:focus-visible{
     outline: none;
