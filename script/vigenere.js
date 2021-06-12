@@ -141,6 +141,7 @@ function generate_link(){
 
     document.getElementById("link").href = url_sito + "?" + f
     document.getElementById("link").hidden = !button_share_show;
+    document.getElementById("link_refresh").hidden = !button_share_show;
 }
 
 function open_link() {
@@ -170,4 +171,6 @@ decrypt2();
 record();
 
 
-document.getElementById("version_p").innerHTML = "0.4";
+document.getElementById("version_p").innerHTML = "0.5";
+
+document.getElementById("link_refresh").href = document.URL.split("?",1);
